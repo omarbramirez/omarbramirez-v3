@@ -6,18 +6,6 @@ import { notFound } from "next/navigation";
 import {routing} from '../../i18n/routing';
 import { ibm, garamond } from "../../fonts/index";
 
-// export const ibm = IBM_Plex_Sans({
-//   subsets: ['latin'],
-//   weight: ['400', '500', '700'], 
-//   display: 'swap',
-// });
-
-// export const garamond = EB_Garamond({
-//   subsets: ['latin'],
-//   weight: ['400', '700'],
-//   display: 'swap',
-// });
-
 export const metadata: Metadata = {
   title: "Omar B Ramirez",
   description: "Desarrollador web",

@@ -19,5 +19,22 @@ if we are using Typescript and npm Negotiatior, we must `npm install --save @typ
 1) **`className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'`** => `w-11/12` » Define el ancho del elemento como el 91.666667% del contenedor (11/12 partes).
 
 
-33:30
+**Desestructuración de objetos** => extrae directamente esas propiedades como variables individuales para usarlas cómodamente dentro del cuerpo de la función.
 
+```
+{infoList.map(({ icon, iconDark, title, description }, index) => (
+  <li key={index}>
+    {/* contenido */}
+  </li>
+))}
+
+//es equivalente a:
+
+infoList.map((item, index) => {
+  const icon = item.icon;
+  const iconDark = item.iconDark;
+  const title = item.title;
+  const description = item.description;
+  // usar icon, iconDark, title, description aquí
+});
+```

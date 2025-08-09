@@ -16,5 +16,22 @@
         "contact": "contáctame",
         "my_resume": "mi CV",
         "cv": "/cv-esp.pdf"
+    },
+    "About": {
+        "introduction": "Introducción",
+        "aboutMe": "Sobre mí",
+        "description": "Soy un desarrollador full-stack experimentado. He colaborado con instituciones como la Academia Ecuatoriana de la Lengua y la Feria Internacional del Libro de Quito, así como con profesionales de diversas áreas en proyectos nacionales e internacionales. Especialista en MERN y Next.js.",
+        "languages": {
+            "title": "Lenguajes",
+            "desc": "HTML, CSS, JavaScript, React.js, Next.js"
+        },
+        "education": {
+            "title": "Educación",
+            "desc": "Licenciatura en Informática"
+        },
+        "projects": {
+            "title": "Proyectos",
+            "desc": "He desarrollado más de 5 proyectos"
+        }
     }
 }
