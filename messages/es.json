@@ -1,0 +1,20 @@
+{
+    "HomePage": {
+        "greeting": "Holi crayoli"
+    },
+    "Navbar": {
+        "home": "",
+        "aboutMe": "Sobre mí",
+        "services": "Servicios",
+        "work": "Mi trabajo",
+        "contact": "Contáctame"
+    },
+    "Header": {
+        "greeting": "¡Hola, soy Omar!",
+        "punchline": "Full-stack por vocación. CDMX por elección.",
+        "resume": "Desarrollador full-stack con 4 años de experiencia internacional. Experto en JavaScript, Node.js y React. Apasionado por diseñar soluciones escalables y experiencias digitales efectivas.",
+        "contact": "contáctame",
+        "my_resume": "mi CV",
+        "cv": "/cv-esp.pdf"
+    }
+}

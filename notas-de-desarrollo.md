@@ -1,1 +1,23 @@
 ▶ la configuración ´i18n´ en ´next.config.js´ se deprecó desde la versión 13.
+
+if we are using Typescript and npm Negotiatior, we must `npm install --save @types/negotiator` » this package contains type definitions for negotiator.
+
+▶ When using features from next-intl in Server Components, the relevant configuration is read from a central module that is located at i18n/request.ts 
+
+**` matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)'`** =>
+1. *`((?!...).*)`* » lookhead negativo » haz match con cualquier cosa que no comience con las rutas especificadas dentro del paréntesis.
+2. *`.*\\..*`* » Excluye archivos con punto (por ejemplo: `/favicon.ico`, `/robots.txt`)
+3. *`.*`* »  seguido de cualquier cosa
+
+**'use client'** => se utiliza para indicar que un archivo o componente debe ser renderizado del lado del cliente (client-side rendering, CSR) » acceso al estado local, eventos del DOM, hooks de React que dependen del cliente (useState, useEffect, useContext, etc.).
+
+**`lg:flex`** => sistema de utilidades de Tailwind CSS, y es una clase de utilidad responsiva que aplica el comportamiento display: flex solo a partir del breakpoint "lg" (large) hacia arriba.
+
+**`py-`** => abreviatura para "padding vertical", es decir, aplica padding (espaciado interno) en los ejes Y, o sea arriba (padding-top) y abajo (padding-bottom) de un elemento.
+
+## PENDIENTES
+1) **`className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'`** => `w-11/12` » Define el ancho del elemento como el 91.666667% del contenedor (11/12 partes).
+
+
+33:30
+
