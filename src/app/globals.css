@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
-body,p {
-  font-family: ibm, sans-serif;
+@theme {
+  --color-lightHover: #d1f7f3;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001F;
+  --font-IBM_Plex_Sans: "IBM Plex Sans", sans-serif;
+  --font-EB_Garamond: "EB Garamond", serif;
 }
-/* h1, h2, h3, blockquote, .section-title {
-  font-family: garamond, serif;
-} */
