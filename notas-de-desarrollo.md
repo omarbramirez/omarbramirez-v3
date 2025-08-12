@@ -38,3 +38,6 @@ infoList.map((item, index) => {
   // usar icon, iconDark, title, description aquí
 });
 ```
+
+
+## INVESTIGAR SE0 EN NEXTJS

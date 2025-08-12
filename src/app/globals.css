@@ -6,4 +6,7 @@
   --color-darkTheme: #11001F;
   --font-IBM_Plex_Sans: "IBM Plex Sans", sans-serif;
   --font-EB_Garamond: "EB Garamond", serif;
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+  --grid-cols-auto: repeat(auto-fit, minmax(200px, 1fr));
 }
