@@ -63,6 +63,12 @@
     "Contact": {
         "title": "Contáctame",
         "subtitle": "Pregunte con confianza",
-        "description": "¡Bienvenido a mi portafolio de desarrollo web! Explora una colección de proyectos que muestran mi experiencia en desarrollo full-stack."
+        "description": "¿Tienes dudas o comentarios? ¡Me encantaría saber de ti! Usa el formulario a continuación.",
+        "form": {
+            "name": "Nombre completo",
+            "email": "Correo electrónico",
+            "message": "Escribe tu mensaje aquí",
+            "submit": "Enviar mensaje"
+        }
     }
 }
