@@ -23,7 +23,7 @@ export default async function LocaleLayout({
   }
   return(
     <html lang={locale} className="scroll-smooth">
-      <body className={`${ibm.className} ${garamond.className} antialiased leading-8 overflow-x-hidden`}>
+      <body className={`${ibm.className} ${garamond.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

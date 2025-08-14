@@ -68,7 +68,12 @@
             "name": "Nombre completo",
             "email": "Correo electrónico",
             "message": "Escribe tu mensaje aquí",
-            "submit": "Enviar mensaje"
+            "submit": "Enviar mensaje",
+            "msgOnSuccess": "Enviado con éxito",
+            "msgOnError": "Algo salió mal, por favor inténtalo de nuevo más tarde."
         }
+    },
+    "Footer":{
+        "copyright": "Todos los derechos reservados."
     }
 }

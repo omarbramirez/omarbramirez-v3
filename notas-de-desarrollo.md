@@ -1,6 +1,6 @@
 ▶ la configuración ´i18n´ en ´next.config.js´ se deprecó desde la versión 13.
 
-if we are using Typescript and npm Negotiatior, we must `npm install --save @types/negotiator` » this package contains type definitions for negotiator.
+▶ if we are using Typescript and npm Negotiatior, we must `npm install --save @types/negotiator` » this package contains type definitions for negotiator.
 
 ▶ When using features from next-intl in Server Components, the relevant configuration is read from a central module that is located at i18n/request.ts 
 
@@ -15,7 +15,6 @@ if we are using Typescript and npm Negotiatior, we must `npm install --save @typ
 
 **`py-`** => abreviatura para "padding vertical", es decir, aplica padding (espaciado interno) en los ejes Y, o sea arriba (padding-top) y abajo (padding-bottom) de un elemento.
 
-## PENDIENTES
 1) **`className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'`** => `w-11/12` » Define el ancho del elemento como el 91.666667% del contenedor (11/12 partes).
 
 
@@ -39,5 +38,43 @@ infoList.map((item, index) => {
 });
 ```
 
+**Web3Forms** => `useForm()` de react-hook-form no mira solo los `name` de HTML; debes usar `register` para que la librería “escuche” los valores:
 
-## INVESTIGAR SE0 EN NEXTJS
+```
+<input
+  type="text"
+  placeholder={t('form.name')}
+  {...register("name", { required: true })}
+  className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+/>
+```
+
+**`clearTimeout` dentro del `return` del `useEffect`** => como patrón de limpieza (cleanup) para evitar problemas cuando el componente se desmonta o cuando el estado isSuccess cambia antes de que el temporizador termine.
+
+1. Cancela cualquier timer previo si isSuccess cambia antes de que termine el anterior
+2. Evita memory leaks o intentos de actualizar el estado en un componente desmontado.
+3. Es un patrón estándar en React para efectos con temporizadores.
+
+```
+useEffect(() => {
+  if (isSuccess) {
+    const timer = setTimeout(() => setIsSuccess(false), 3000);
+
+    return () => clearTimeout(timer); // cleanup
+  }
+}, [isSuccess, setIsSuccess]);
+
+```
+
+**Operadores lógicos `||` y `&&`** => En JavaScript, el && tiene mayor precedencia que ||.
+
+```
+if (
+  (localStorage.theme === 'dark') ||
+  ( (!('theme' in localStorage)) && window.matchMedia('(prefers-color-theme:dark)').matches )
+)
+// Si en localStorage.theme existe y es exactamente "dark",
+→ entra directamente al if y activa isDarkMode.
+// Si NO existe la propiedad "theme" en localStorage y
+el navegador informa que el usuario prefiere dark mode (prefers-color-theme: dark)
+```

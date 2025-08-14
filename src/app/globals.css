@@ -1,9 +1,10 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-lightHover: #d1f7f3;
-  --color-darkHover: #2a004a;
-  --color-darkTheme: #11001F;
+  --color-darkHover: #1ab1a6;
+  --color-darkTheme: #0f172a;
   --font-IBM_Plex_Sans: "IBM Plex Sans", sans-serif;
   --font-EB_Garamond: "EB Garamond", serif;
   --shadow-black: 4px 4px 0 #000;
