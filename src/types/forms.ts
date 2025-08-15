@@ -4,3 +4,12 @@ export interface ContactFormValues {
   email: string;
   message: string;
 }
+
+export interface NavbarProps {
+  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+  isDarkMode: boolean;
+}
+
+export interface SectionProps {
+  isDarkMode: boolean;
+}

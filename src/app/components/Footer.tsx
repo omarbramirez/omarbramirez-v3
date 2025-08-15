@@ -1,17 +1,19 @@
 
 import { assets } from "../assets/assets";
 import Image from "next/image";
-import { useTranslations } from 'next-intl'
+import { useTranslations } from 'next-intl';
+import { SectionProps } from "../../types/forms";
 
-const Footer = () => {
+
+const Footer:React.FC<SectionProps> = ({isDarkMode}) => {
     const t = useTranslations('Footer')
     return (
         <div className="mt-20">
             <div className="text-center">
-                <Image src={assets.logo} alt='' className='w-36 mx-auto' />
+                <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='' className='w-36 mx-auto' />
 
                 <div className="w-max flex items-center gap-2 mx-auto">
-                    <Image src={assets.mail_icon} alt='' className="w-6" />
+                    <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt='' className="w-6" />
                     omar.ramirez94@hotmail.es
                 </div>
             </div>

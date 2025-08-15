@@ -78,3 +78,18 @@ if (
 // Si NO existe la propiedad "theme" en localStorage y
 el navegador informa que el usuario prefiere dark mode (prefers-color-theme: dark)
 ```
+
+**Tipado de `setIsDarkMode()`** => Puede recibir un booleano directamente, o una función que a su vez recibe un booleano y devuelve otro booleano, y que actualizará el estado del componente.
+
+```
+interface NavbarProps {
+  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+}
+// Dispatch es un tipo genérico de React que representa una función que recibe un argumento y dispara una acción.
+
+// SetStateAction<T> puede ser: Un valor directo de tipo T, en este caso boolean O una función que recibe el estado anterior (prevState) y retorna el nuevo estado. setIsDarkMode() puede ser (true) o (prev => !prev).
+```
+
+**Arrow function en el onClick `setIsDarkMode(prev => !prev)`** => `!prev` invierte el estado: si era true pasa a false, y viceversa. Toma el estado anterior y devuélveme su inverso, luego actualiza el estado con ese valor.
+
+cost anomally detection

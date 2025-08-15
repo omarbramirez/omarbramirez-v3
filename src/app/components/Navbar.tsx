@@ -2,10 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import {assets} from '@/src/app/assets/assets'
 import { useTranslations } from 'next-intl'
-interface NavbarProps {
-  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-  isDarkMode: boolean;
-}
+import { NavbarProps } from "../../types/forms";
+
 const Navbar: React.FC<NavbarProps>  =({setIsDarkMode, isDarkMode}) => {
   const t = useTranslations('Navbar');
   const sideMenuRef = useRef<HTMLUListElement>(null); 
