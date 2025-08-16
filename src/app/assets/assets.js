@@ -11,7 +11,7 @@ import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.svg';
+import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
@@ -35,6 +35,16 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import chatgpt from './chatgpt.png';
+import aws from './aws.png';
+import netlify from './netlify.png';
+import postman from './postman.png';
+import photoshop from './photoshop.png';
+import illustrator from './illustrator.png';
+import mysql from './mysql.png';
+import stripe from './stripe.png';
+import android_studio from './android_studio.png';
+import paypal from './paypal.png';
 
 export const assets = {
     user_image,
@@ -73,7 +83,17 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    chatgpt,
+    aws,
+    netlify,
+    postman,
+    photoshop,
+    illustrator,
+    mysql,
+    stripe,
+    android_studio,
+    paypal
 };
 
 export const workData = [
@@ -102,8 +122,8 @@ export const workData = [
 export const serviceData = [
   { icon: assets.web_icon, iconDark: assets.web_icon_dark, titleKey: "web.title", descriptionKey: "web.description", link: '' },
   { icon: assets.mobile_icon, iconDark: assets.mobile_icon_dark, titleKey: "mobile.title", descriptionKey: "mobile.description", link: '' },
-  { icon: assets.ui_icon, iconDark: assets.ui_icon_dark, titleKey: "uiux.title", descriptionKey: "uiux.description", link: '' },
-  { icon: assets.graphics_icon, iconDark: assets.graphics_icon_dark, titleKey: "graphics.title", descriptionKey: "graphics.description", link: '' }
+  { icon: assets.graphics_icon, iconDark: assets.graphics_icon_dark, titleKey: "automation.title", descriptionKey: "automation.description", link: '' },
+  { icon: assets.ui_icon, iconDark: assets.ui_icon_dark, titleKey: "uiux.title", descriptionKey: "uiux.description", link: '' }
 ];
 
 
@@ -114,5 +134,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.git, assets.chatgpt, assets.aws, assets.netlify, assets.postman, assets.mysql, assets.stripe, assets.android_studio, assets.paypal
 ];
