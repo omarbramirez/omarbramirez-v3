@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { SectionProps } from "../../types/forms";
 import { motion } from 'motion/react'
 
-const Services: React.FC<SectionProps> = () => {
+const Services: React.FC<SectionProps> = ({isDarkMode}) => {
     const t = useTranslations('Services')
     return (
         <motion.div
@@ -35,24 +35,20 @@ const Services: React.FC<SectionProps> = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.6 }}
                 className='grid grid-cols-(--grid-cols-auto) gap-6 my-10'>
-                {/* <div className='grid grid-cols-auto gap-6 my-10'> */}
-                {serviceData.map(({ icon, titleKey, descriptionKey, link }, index) => (
+                {serviceData.map(({ icon, iconDark, titleKey, descriptionKey, link }, index) => (
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.9, duration: 0.6 }}
                         key={index}
                         className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
-                        <Image src={icon} alt='' className='w-10' />
-                        <h3 className='text-lg my-4 text-gray-700 dark:text-white'>
+                        <Image src={isDarkMode ? iconDark : icon} alt='' className='w-40 mx-auto' />
+                        <h3 className='my-4 font-semibold text-gray-700 font-EB_Garamond dark:text-white'>
                             {t(titleKey)}
                         </h3>
-                        <p className='text-sm text-gray-600 leading-5 dark:text-white'>
+                        <p className='text-gray-600 text-sm font-IBM_Plex_Sans dark:text-white'>
                             {t(descriptionKey)}
                         </p>
-                        <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                            {t('read_more')} <Image alt='' src={assets.right_arrow} className='w-4' />
-                        </a>
                     </motion.div>
                 ))
 
@@ -63,3 +59,6 @@ const Services: React.FC<SectionProps> = () => {
 }
 
 export default Services
+
+
+

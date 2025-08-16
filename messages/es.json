@@ -8,8 +8,8 @@
     },
     "Header": {
         "greeting": "¡Hola, soy Omar!",
-        "punchline": "Full-stack por vocación. CDMX por elección.",
-        "resume": "Desarrollador full-stack con 4 años de experiencia internacional. Experto en JavaScript, Node.js y React. Apasionado por diseñar soluciones escalables y experiencias digitales efectivas.",
+        "punchline": "Full-stack por vocación. Chilango por elección.",
+        "resume": "Desarrollador full-stack con 4 años de experiencia internacional. Especialista en JavaScript, Node.js y React. Apasionado por diseñar soluciones escalables y experiencias digitales efectivas.",
         "contact": "contáctame",
         "my_resume": "mi CV",
         "cv": "/cv-esp.pdf"
@@ -19,47 +19,70 @@
         "subtitle": "Sobre mí",
         "description": "Soy un desarrollador full-stack experimentado. He colaborado con instituciones como la Academia Ecuatoriana de la Lengua y la Feria Internacional del Libro de Quito, así como con profesionales de diversas áreas en proyectos nacionales e internacionales. Especialista en MERN y Next.js.",
         "languages": {
-            "title": "Lenguajes",
-            "desc": "HTML, CSS, JavaScript, React.js, Next.js"
-        },
-        "education": {
-            "title": "Educación",
-            "desc": "Licenciatura en Lingüística"
-        },
-        "projects": {
-            "title": "Proyectos",
-            "desc": "He desarrollado más de 5 proyectos"
-        },
+  "title": "Lenguajes y Frameworks",
+  "desc": "HTML5, CSS3, JavaScript (ES6+), TypeScript, React.js, Next.js, Node.js, Express, React Native, Sass"
+},
+"education": {
+  "title": "Educación",
+  "desc": "Licenciatura en Lingüística (BUAP, 2020) & AWS Certified Cloud Practitioner (2025, en curso)"
+},
+"projects": {
+  "title": "Proyectos",
+  "desc": "Más de 10 proyectos entregados con soluciones diversas: e-commerce, sistemas de reservas y agenda, aplicaciones móviles, sitios institucionales y plataformas web personalizadas."
+},
         "technologies": "Tecnologías"
     },
     "Services": {
         "title": "¿Qué ofrezco?",
         "subtitle": "Mis servicios",
         "description": "Soy un desarrollador full-stack experimentado. He colaborado con instituciones como la Academia Ecuatoriana de la Lengua y la Feria Internacional del Libro de Quito, así como con profesionales de diversas áreas en proyectos nacionales e internacionales. Especialista en MERN y Next.js.",
-        "web": {
-            "title": "Diseño Web",
-            "description": "El desarrollo web es el proceso de construir, programar..."
-        },
-        "mobile": {
-            "title": "Aplicaciones Móviles",
-            "description": "El desarrollo de apps móviles consiste en crear software para dispositivos móviles..."
-        },
-        "uiux": {
-            "title": "Diseño UI/UX",
-            "description": "El diseño UI/UX se centra en crear una experiencia de usuario fluida..."
-        },
-        "graphics": {
-            "title": "Diseño Gráfico",
-            "description": "Soluciones creativas de diseño para mejorar la comunicación visual..."
-        },
+       "web": {
+  "title": "Desarrollo Web",
+  "description": "Creación de sitios y aplicaciones web dinámicas con tecnologías modernas (React, Next.js, Node.js, MongoDB), optimizadas para rendimiento, escalabilidad y SEO."
+},
+"mobile": {
+  "title": "Aplicaciones Móviles",
+  "description": "Desarrollo de apps móviles híbridas con React Native, sincronizadas con bases de datos y adaptadas desde versiones web para ofrecer experiencias consistentes en Android e iOS."
+},
+"automation": {
+  "title": "Integraciones y Automatización",
+  "description": "Implementación de APIs, pasarelas de pago (Stripe, PayPal, Mercado Pago), webhooks y automatización de procesos con notificaciones en tiempo real y gestión optimizada de datos."
+},
+"uiux": {
+  "title": "Diseño UI/UX",
+  "description": "Diseño de interfaces modernas, intuitivas y centradas en el usuario, con identidad visual coherente y experiencias de navegación fluidas en web y móvil."
+},
         "read_more": "Leer más"
     },
-    "Work": {
-        "title": "Mi portafolio",
-        "subtitle": "Mis últimos proyectos",
-        "description": "¡Bienvenido a mi portafolio de desarrollo web! Explora una colección de proyectos que muestran mi experiencia en desarrollo full-stack.",
-        "show_more": "Mostrar más"
-    },
+  "Work": {
+    "title": "Mi portafolio",
+    "subtitle": "Mis últimos proyectos",
+    "description": "¡Bienvenido a mi portafolio de desarrollo web! Explora una colección de proyectos que muestran mi experiencia en desarrollo full-stack.",
+    "show_more": "Mostrar más",
+    "show_project": "Mostrar proyecto",
+    "projects": {
+      "blog": {
+        "title": "Blog educativo",
+        "description": "Plataforma cultural de fomento a la lectura, con integración multimedia y métricas de participación para optimizar el alcance."
+      },
+      "agenda": {
+        "title": "Sistema de citas online",
+        "description": "Módulo de gestión con pagos en línea, administración de horarios, confirmaciones automáticas y gestión de clientes."
+      },
+      "ecommerce": {
+        "title": "E-commerce interactivo",
+        "description": "Tienda en línea de productos personalizables, con renders 3D en tiempo real, opciones seguras de pago y seguimiento de pedidos."
+      },
+      "diccionario": {
+        "title": "Diccionario web",
+        "description": "Aplicación web de consulta rápida de términos, con búsqueda instantánea, historial de consultas y sincronización entre dispositivos."
+      },
+      "eventos": {
+        "title": "Portal de registro",
+        "description": "Sistema para registrar y gestionar participantes en eventos. Incluye inscripción en línea, gestión de asistentes, recordatorios automáticos y reportes de asistencia."
+      }
+    }
+  },
     "Contact": {
         "title": "Contáctame",
         "subtitle": "Pregunte con confianza",

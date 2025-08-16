@@ -28,15 +28,13 @@ const About: React.FC<SectionProps> = ({ isDarkMode }) => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
         className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-        <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
-          <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
-        </div>
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
           className='flex-1'>
-          <p className='mb-10 max-w-2xl font-IBM_Plex_Sans'>
+          <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-IBM_Plex_Sans'>
             {t('description')}
           </p>
 
@@ -44,7 +42,7 @@ const About: React.FC<SectionProps> = ({ isDarkMode }) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+            className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto'>
             {infoList.map(({ icon, iconDark, titleKey, descriptionKey }, index) => (
               <li key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
                 <Image src={isDarkMode ? iconDark : icon} alt={t(titleKey)} className='w-7 mt-3' />
@@ -55,25 +53,28 @@ const About: React.FC<SectionProps> = ({ isDarkMode }) => {
             }
           </motion.ul>
           <motion.h4
-            initial={{ y:20, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 1.3, duration: 0.5 }}
-            className='my-6 text-gray-700 font-EB_Garamond dark:text-white'>{t('technologies')}</motion.h4>
-          <motion.ul 
-          initial={{ opacity: 0 }}
+            className='my-6 text-gray-700 font-EB_Garamond dark:text-white text-center'>{t('technologies')}</motion.h4>
+          <motion.ul
+            initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 0.6 }}
-          
-          className='flex items-center gap-3 sm:gap-5 '>
-            {toolsData.map((tool, index) => (
-              <motion.li 
-              whileHover={{scale: 1.1}}
-              className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50' key={`tool-${index}`}>
-                <Image src={tool} alt='tool' className='w-5 sm:w-7' />
+            className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 max-w-3xl mx-auto"
+          >
+            {toolsData.map(({ icon, name }, index) => (
+              <motion.li
+                key={`tool-${index}`}
+                whileHover={{ scale: 1.1 }}
+                className="relative group flex items-center justify-center w-14 sm:w-16 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:bg-lightHover hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+              >
+                <Image src={icon} alt={name} className="w-7 sm:w-9" />
+                <span className="absolute bottom-full mb-2 px-2 py-1 text-xs text-white bg-black dark:bg-white dark:text-black rounded opacity-0 group-hover:opacity-100 transition duration-300 text-center font-IBM_Plex_Sans">
+                  {name}
+                </span>
               </motion.li>
-            ))
-
-            }
+            ))}
           </motion.ul>
         </motion.div>
       </motion.div>

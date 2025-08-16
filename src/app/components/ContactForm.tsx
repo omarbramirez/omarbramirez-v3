@@ -40,14 +40,14 @@ export const ContactForm: React.FC<ContactFormProps> = ({ register, handleSubmit
     <motion.textarea 
     initial={{ y:100, opacity: 0 }}
     whileInView={{ y:0, opacity: 1 }}
-    transition={{ delay: 1.3, duration: 0.6 }}
-    rows={6} placeholder="Escribe tu mensaje" {...register("message", { required: true })} className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"></motion.textarea>
+    transition={{ delay: 0.9, duration: 0.6 }}
+    rows={6} placeholder="Escribe tu mensaje" {...register("message", { required: true })} className="w-full h-40 p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"></motion.textarea>
 
     <motion.button 
 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ delay: 1.6, duration: 0.5 }}
-    type="submit" className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">
+                transition={{ delay: 1.3, duration: 0.6 }}
+    type="submit" className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover my-10">
       Enviar <Image src={assets.right_arrow_white} alt="" />
     </motion.button>
     <p
