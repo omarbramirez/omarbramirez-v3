@@ -30,7 +30,11 @@ import close_white from './close-white.png';
 import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
+import backend_icon from './backend-icon.png';
+import web_icon_dark from './web-icon-dark.png';
+import mobile_icon_dark from './mobile-icon-dark.png';
+import ui_icon_dark from './ui-icon-dark.png';
+import backend_icon_dark from './backend-icon-dark.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -79,7 +83,11 @@ export const assets = {
     web_icon,
     mobile_icon,
     ui_icon,
-    graphics_icon,
+    backend_icon,
+    web_icon_dark,
+    mobile_icon_dark,
+    ui_icon_dark,
+    backend_icon_dark,
     right_arrow,
     send_icon,
     right_arrow_bold,
@@ -96,33 +104,72 @@ export const assets = {
     paypal
 };
 
+
 export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
+  {
+    key: 'blog',
+    bgImage: '/work-educativa-web.jpg',
+    link: 'https://cuentame-un-poquito.com/'
+  },
+  {
+    key: 'agenda',
+    bgImage: '/work-agenda-nutriologia.jpg',
+    link: 'https://nutriologadalid.com/'
+  },
+  {
+    key: 'ecommerce',
+    bgImage: '/work-tienda-3d.jpg',
+    link: '#'
+  },
+  {
+    key: 'diccionario',
+    bgImage: '/work-diccionario-app.jpg',
+    link: 'http://www.academiaecuatorianadelalengua.org/gentilicios/'
+  }
+
+
+
+
+//   {
+//     title: 'Portal de registro',
+//     description: 'Sistema para registrar y gestionar participantes en eventos. Incluye inscripción en línea, gestión de asistentes, recordatorios automáticos y reportes de asistencia.',
+//     bgImage: '/work-eventos.png',
+//     link: '#'
+//   },
+];
+
+
+
+
+
+
+// export const workData = [
+//     {
+//         title: 'Frontend project',
+//         description: 'Web Design',
+//         bgImage: '/work-1.png',
+//     },
+//     {
+//         title: 'Geo based app',
+//         description: 'Mobile App',
+//         bgImage: '/work-2.png',
+//     },
+//     {
+//         title: 'Photography site',
+//         description: 'Web Design',
+//         bgImage: '/work-3.png',
+//     },
+//     {
+//         title: 'UI/UX designing',
+//         description: 'UI/UX Design',
+//         bgImage: '/work-4.png',
+//     },
+// ]
 
 export const serviceData = [
   { icon: assets.web_icon, iconDark: assets.web_icon_dark, titleKey: "web.title", descriptionKey: "web.description", link: '' },
   { icon: assets.mobile_icon, iconDark: assets.mobile_icon_dark, titleKey: "mobile.title", descriptionKey: "mobile.description", link: '' },
-  { icon: assets.graphics_icon, iconDark: assets.graphics_icon_dark, titleKey: "automation.title", descriptionKey: "automation.description", link: '' },
+  { icon: assets.backend_icon, iconDark: assets.backend_icon_dark, titleKey: "automation.title", descriptionKey: "automation.description", link: '' },
   { icon: assets.ui_icon, iconDark: assets.ui_icon_dark, titleKey: "uiux.title", descriptionKey: "uiux.description", link: '' }
 ];
 
@@ -134,5 +181,16 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.git, assets.chatgpt, assets.aws, assets.netlify, assets.postman, assets.mysql, assets.stripe, assets.android_studio, assets.paypal
+  { icon: assets.vscode, name: "VS Code" },
+  { icon: assets.firebase, name: "Firebase" },
+  { icon: assets.mongodb, name: "MongoDB" },
+  { icon: assets.git, name: "Git" },
+  { icon: assets.chatgpt, name: "IA" },
+  { icon: assets.aws, name: "AWS" },
+  { icon: assets.netlify, name: "Netlify" },
+  { icon: assets.postman, name: "Postman" },
+  { icon: assets.mysql, name: "MySQL" },
+  { icon: assets.stripe, name: "Stripe" },
+  { icon: assets.android_studio, name: "Android Studio" },
+  { icon: assets.paypal, name: "PayPal" },
 ];
