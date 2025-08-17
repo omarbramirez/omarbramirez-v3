@@ -14,7 +14,7 @@ export interface SectionProps {
   isDarkMode: boolean;
 }
 
-export interface Education {
+export interface AboutMeListProps {
   title: string;
   list: string[];
 }

@@ -2,13 +2,13 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import { assets, infoList, toolsData } from '@/src/app/assets/assets'
 import Image from 'next/image'
-import { SectionProps,Education } from "../../types/forms";
+import { SectionProps,AboutMeListProps } from "../../types/forms";
 import { motion } from 'motion/react'
 
 
 const About: React.FC<SectionProps> = ({ isDarkMode }) => {
   const t = useTranslations('About')
-  const education = t.raw("education") as Education;
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ const About: React.FC<SectionProps> = ({ isDarkMode }) => {
     </h3>
 
     <ul className='list-disc list-inside text-gray-600 text-sm font-IBM_Plex_Sans dark:text-white space-y-1'>
-      {education.list.map((item, i) => (
+      {t.raw(listKey).map((item: string, i: number) => (
         <li key={i}>{item}</li>
       ))}
     </ul>

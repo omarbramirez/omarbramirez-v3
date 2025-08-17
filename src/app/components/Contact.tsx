@@ -6,10 +6,11 @@ import { motion } from 'motion/react'
 
 const Contact = () => {
   const t = useTranslations("Contact");
-  const { register, handleSubmit, submit, result,isSuccess, setIsSuccess } = useContactForm();
+  const { register, handleSubmit, submit, result,isSuccess, setIsSuccess, reset } = useContactForm();
 
 useEffect(() => {
   if (isSuccess) {
+    reset()
     const timer = setTimeout(() => setIsSuccess(false), 3000);
     return () => clearTimeout(timer);
   }

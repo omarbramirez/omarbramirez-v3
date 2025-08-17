@@ -30,5 +30,5 @@ export const useContactForm = () => {
     },
   });
 
-  return { register, handleSubmit, submit, result, isSuccess, setIsSuccess };
+  return { register, handleSubmit, submit, result, isSuccess, setIsSuccess,reset };
 };

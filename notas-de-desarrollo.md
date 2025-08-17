@@ -108,3 +108,11 @@ cost anomally detection
             ))
             } */}
 ```
+
+
+**Tipado `t: (key: string, values?: Record<string, string | number | Date>) => string;`** => 
+
+
+**Tipados específicos que implementamos en light-rays.tsx** => 
+
+**How to use a proxy in Next.js** =>
