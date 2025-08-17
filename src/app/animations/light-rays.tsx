@@ -1,10 +1,11 @@
+
 import { useRef, useEffect, useState } from "react";
 import { Renderer, Program, Triangle, Mesh } from "ogl";
 
 const DEFAULT_COLOR = "#ffffff";
 
-// Función para convertir color hexadecimal a RGB
-const hexToRgb = (hex: string) => {
+// Función para convertir color hexadecimal a RGB, retornando un tuple [number, number, number]
+const hexToRgb = (hex: string): [number, number, number] => {
   // Manejar variable CSS como var(--rays-color, #1ab1a6)
   const hexMatch = hex.match(/#(?:[0-9a-fA-F]{3}){1,2}$/);
   const cleanHex = hexMatch ? hexMatch[0] : hex.includes("var(--rays-color,") ? hex.match(/#[0-9a-fA-F]{6}/)?.[0] || DEFAULT_COLOR : hex;
@@ -18,8 +19,8 @@ const hexToRgb = (hex: string) => {
     : [1, 1, 1]; // Blanco por defecto si el formato es inválido
 };
 
-// Función para obtener posición y dirección de los rayos según el origen
-const getAnchorAndDir = (origin: string, w: number, h: number) => {
+// Función para obtener posición y dirección de los rayos, retornando tuples
+const getAnchorAndDir = (origin: string, w: number, h: number): { anchor: [number, number]; dir: [number, number] } => {
   const outside = 0.2;
   switch (origin) {
     case "top-left":
@@ -58,6 +59,25 @@ interface LightRaysProps {
   className?: string;
 }
 
+// Interfaz para los uniforms del shader WebGL
+interface Uniforms {
+  iTime: { value: number };
+  iResolution: { value: [number, number] };
+  rayPos: { value: [number, number] };
+  rayDir: { value: [number, number] };
+  raysColor: { value: [number, number, number] };
+  raysSpeed: { value: number };
+  lightSpread: { value: number };
+  rayLength: { value: number };
+  pulsating: { value: number };
+  fadeDistance: { value: number };
+  saturation: { value: number };
+  mousePos: { value: [number, number] };
+  mouseInfluence: { value: number };
+  noiseAmount: { value: number };
+  distortion: { value: number };
+}
+
 const LightRays: React.FC<LightRaysProps> = ({
   raysOrigin = "top-center",
   raysColor = DEFAULT_COLOR,
@@ -74,7 +94,7 @@ const LightRays: React.FC<LightRaysProps> = ({
   className = "",
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const uniformsRef = useRef<any>(null);
+  const uniformsRef = useRef<Uniforms | null>(null);
   const rendererRef = useRef<Renderer | null>(null);
   const mouseRef = useRef<{ x: number; y: number }>({ x: 0.5, y: 0.5 });
   const smoothMouseRef = useRef<{ x: number; y: number }>({ x: 0.5, y: 0.5 });
@@ -209,7 +229,7 @@ const LightRays: React.FC<LightRaysProps> = ({
                                    1.5 * raysSpeed);
           vec4 rays2 = vec4(1.0) *
                        rayStrength(rayPos, finalRayDir, coord, 22.3991, 18.0234,
-                                   1.1 * raysSpeed);
+                                   1.5 * raysSpeed);
 
           fragColor = rays1 * 0.5 + rays2 * 0.4;
 
@@ -237,7 +257,7 @@ const LightRays: React.FC<LightRaysProps> = ({
           gl_FragColor = color;
         }`;
 
-      const uniforms = {
+      const uniforms: Uniforms = {
         iTime: { value: 0 },
         iResolution: { value: [1, 1] },
         rayPos: { value: [0, 0] },
