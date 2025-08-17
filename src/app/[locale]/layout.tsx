@@ -6,28 +6,32 @@ import { notFound } from "next/navigation";
 import {routing} from '../../i18n/routing';
 import { ibm, garamond } from "../../fonts/index";
 
-export const metadata: Metadata = {
-  title: "Omar B Ramirez",
-  description: "Desarrollador web",
-};
-
 export default async function LocaleLayout({
   children,
   params
 }: {
   children: React.ReactNode,
-  params: Promise<{locale: string}>
-}){
-  const {locale} = await params;
-  if(!hasLocale(routing.locales, locale)){
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params;
+  // Solo permitir español, en caso contrario usar inglés
+  const currentLocale = locale === "es" ? "es" : "en";
+
+  if (!hasLocale(routing.locales, currentLocale)) {
+    notFound();
   }
-  return(
-    <html lang={locale} className="scroll-smooth">
-      <body className={`${ibm.className} ${garamond.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+
+  return (
+    <html lang={currentLocale} className="scroll-smooth">
+      <body
+        className={`${ibm.className} ${garamond.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
+      >
+        <NextIntlClientProvider locale={currentLocale}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
-  )
+  );
 }
 
 

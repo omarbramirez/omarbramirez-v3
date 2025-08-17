@@ -124,7 +124,7 @@ export const workData = [
   {
     key: 'diccionario',
     bgImage: '/work-diccionario-app.jpg',
-    link: 'http://www.academiaecuatorianadelalengua.org/gentilicios/'
+    link: 'https://gentilicios.netlify.app/'
   }
 
 

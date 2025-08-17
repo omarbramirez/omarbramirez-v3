@@ -1,6 +1,118 @@
 {
-    "HomePage":{
-            "greeting": "Welcome",
-    "aboutMe": "About me"
+    "Navbar": {
+        "home": "Home",
+        "aboutMe": "About Me",
+        "services": "Services",
+        "work": "My Work",
+        "contact": "Contact Me"
+    },
+    "Header": {
+        "greeting": "Hi, I'm Omar!",
+        "punchline": "JavaScript by vocation\nInspired in Mexico City.",
+        "resume": "Full-stack developer with 4 years of international experience.\nSpecialist in JavaScript, Node.js and React.\nCommitted to transforming your ideas into scalable, high-impact digital solutions.",
+        "contact": "Contact Me",
+        "my_resume": "My Resume",
+        "cv": "/cv-en.pdf"
+    },
+    "About": {
+        "title": "Introduction",
+        "subtitle": "About Me",
+        "description": "As a full-stack developer, I have collaborated with prestigious institutions such as the Ecuadorian Academy of Language and the Quito International Book Fair, as well as professionals from various commercial sectors. My experience in MERN and Next.js allows me to offer innovative technological solutions that drive the success of your projects.",
+        "languages": {
+            "title": "Languages and Frameworks",
+            "list": [
+                "HTML5",
+                "CSS3",
+                "Sass",
+                "JavaScript (ES6+)",
+                "TypeScript",
+                "React.js",
+                "Next.js",
+                "React Native",
+                "Tailwind CSS",
+                "Bootstrap",
+                "Node.js",
+                "Express"
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "list": [
+                "AWS Certified Cloud Practitioner (Currently studying)",
+                "Node.js, Express, MongoDB & More: The Complete Bootcamp (2022)",
+                "Bachelor's Degree in Linguistics (2019)"
+            ]
+        },
+        "projects": {
+            "title": "Projects",
+            "list": [
+                "More than 10 delivered projects with diverse solutions: e-commerce, booking and scheduling systems, mobile applications, institutional websites, and customized web platforms."
+            ]
+        },
+        "technologies": "Technologies"
+    },
+    "Services": {
+        "title": "What do I offer?",
+        "subtitle": "My Services",
+        "description": "With me, you will have the assurance of receiving cutting-edge technological solutions tailored to your needs. My clients value my comprehensive approach, which combines modern, user-centered interface designs, smooth web and mobile applications, agile integrations with external services, and automations that optimize processes.",
+        "web": {
+            "title": "Web Development",
+            "description": "Creation of dynamic websites and web applications with modern technologies (React, Next.js, Node.js, MongoDB), optimized for performance, scalability, and SEO."
+        },
+        "mobile": {
+            "title": "Mobile Applications",
+            "description": "Development of hybrid mobile apps with React Native, synchronized with databases and adapted from web versions to deliver consistent experiences on Android and iOS."
+        },
+        "automation": {
+            "title": "Integrations and Automation",
+            "description": "Implementation of APIs, payment gateways (Stripe, PayPal, Mercado Pago), webhooks, and process automation with real-time notifications and optimized data management."
+        },
+        "uiux": {
+            "title": "UI/UX Design",
+            "description": "Design of modern, intuitive, user-centered interfaces with consistent visual identity and smooth navigation experiences on web and mobile."
+        },
+        "read_more": "Read more"
+    },
+    "Work": {
+        "title": "My Portfolio",
+        "subtitle": "My Latest Projects",
+        "description": "Explore my portfolio! Discover a selection of projects that demonstrate my ability to transform ideas into effective digital solutions, from e-commerce platforms that boost sales to management systems that optimize processes, all created with a comprehensive approach and modern technologies.",
+        "show_more": "Show more",
+        "show_project": "View project",
+        "in_progress": "In progress",
+        "projects": {
+            "blog": {
+                "title": "Educational Blog",
+                "description": "Cultural platform to promote reading, with multimedia integration and participation metrics."
+            },
+            "agenda": {
+                "title": "Online Appointment System",
+                "description": "Management module with online payments, schedule administration, automatic confirmations, and client management."
+            },
+            "ecommerce": {
+                "title": "Interactive E-commerce",
+                "description": "Online store for customizable products with real-time 3D renders, secure payment options, and order tracking."
+            },
+            "diccionario": {
+                "title": "Web Dictionary",
+                "description": "Web application for quick term lookup, with instant search, query history, and device synchronization."
+            }
+        }
+    },
+    "Contact": {
+        "title": "Contact Me",
+        "subtitle": "Reach out with confidence",
+        "description": "Do you have questions or comments? I’d love to hear from you! Use the form below.",
+        "form": {
+            "name": "Full Name",
+            "email": "Email",
+            "message": "Write your message here",
+            "submit": "Send Message",
+            "msgOnSuccess": "Sent successfully",
+            "msgOnError": "Something went wrong, please try again later."
+        }
+    },
+    "Footer": {
+        "copyright": "All rights reserved."
     }
 }
