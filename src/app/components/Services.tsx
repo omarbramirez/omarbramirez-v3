@@ -51,7 +51,6 @@ const Services: React.FC<SectionProps> = ({isDarkMode}) => {
                         </p>
                     </motion.div>
                 ))
-
                 }
             </motion.div>
         </motion.div>

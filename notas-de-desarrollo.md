@@ -93,3 +93,18 @@ interface NavbarProps {
 **Arrow function en el onClick `setIsDarkMode(prev => !prev)`** => `!prev` invierte el estado: si era true pasa a false, y viceversa. Toma el estado anterior y devuélveme su inverso, luego actualiza el estado con ese valor.
 
 cost anomally detection
+
+
+
+## back up
+
+```
+            {/* {infoList.map(({ icon, iconDark, titleKey, descriptionKey }, index) => (
+              <li key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
+                <Image src={isDarkMode ? iconDark : icon} alt={t(titleKey)} className='w-7 mt-3' />
+                <h3 className='my-4 font-semibold text-gray-700 font-EB_Garamond dark:text-white'>{t(titleKey)}</h3>
+                <p className='text-gray-600 text-sm font-IBM_Plex_Sans dark:text-white'>{t(descriptionKey)}</p>
+              </li>
+            ))
+            } */}
+```

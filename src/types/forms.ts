@@ -13,3 +13,8 @@ export interface NavbarProps {
 export interface SectionProps {
   isDarkMode: boolean;
 }
+
+export interface Education {
+  title: string;
+  list: string[];
+}

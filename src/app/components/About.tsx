@@ -2,11 +2,13 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import { assets, infoList, toolsData } from '@/src/app/assets/assets'
 import Image from 'next/image'
-import { SectionProps } from "../../types/forms";
+import { SectionProps,Education } from "../../types/forms";
 import { motion } from 'motion/react'
+
 
 const About: React.FC<SectionProps> = ({ isDarkMode }) => {
   const t = useTranslations('About')
+  const education = t.raw("education") as Education;
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -43,14 +45,27 @@ const About: React.FC<SectionProps> = ({ isDarkMode }) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto'>
-            {infoList.map(({ icon, iconDark, titleKey, descriptionKey }, index) => (
-              <li key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
-                <Image src={isDarkMode ? iconDark : icon} alt={t(titleKey)} className='w-7 mt-3' />
-                <h3 className='my-4 font-semibold text-gray-700 font-EB_Garamond dark:text-white'>{t(titleKey)}</h3>
-                <p className='text-gray-600 text-sm font-IBM_Plex_Sans dark:text-white'>{t(descriptionKey)}</p>
-              </li>
-            ))
-            }
+            
+            
+            
+            
+{infoList.map(({ icon, iconDark, titleKey, listKey }, index) => (
+  <li 
+    key={index} 
+    className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'
+  >
+    <Image src={isDarkMode ? iconDark : icon} alt={t(titleKey)} className='w-7 mt-3' />
+    <h3 className='my-4 font-semibold text-gray-700 font-EB_Garamond dark:text-white'>
+      {t(titleKey)}
+    </h3>
+
+    <ul className='list-disc list-inside text-gray-600 text-sm font-IBM_Plex_Sans dark:text-white space-y-1'>
+      {education.list.map((item, i) => (
+        <li key={i}>{item}</li>
+      ))}
+    </ul>
+  </li>
+))}        
           </motion.ul>
           <motion.h4
             initial={{ y: 20, opacity: 0 }}

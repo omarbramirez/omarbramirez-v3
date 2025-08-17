@@ -42,9 +42,6 @@ const openMenu = () => {
 
   return (
 <>
-<div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
-  <Image src={assets.header_bg_color} alt='header_bg_color' className='w-full'/>
-</div>
 <nav className= {`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
     <a href="#top">
         <Image src={isDarkMode ? assets.logo_dark : assets.logo} className='w-28 cursor-pointer mr-14' alt='logo'/>

@@ -41,9 +41,13 @@ const Work: React.FC<SectionProps> = ({ isDarkMode }) => {
             <div className="p-4">
               <h3 className='my-4 font-semibold text-gray-700 font-EB_Garamond dark:text-white'>{t(`projects.${work.key}.title`)}</h3>
               <p className='text-gray-600 text-sm font-IBM_Plex_Sans dark:text-white'>{t(`projects.${work.key}.description`)}</p>
-              <a href={work.link} target="_blank" className='text-darkHover text-sm font-IBM_Plex_Sans dark:text-lightHover'>
+              { work.link !== '#' ? (<a href={work.link} target="_blank" className='my-2 text-darkHover text-sm font-IBM_Plex_Sans dark:text-lightHover'>
                 {t('show_project')}
-              </a>
+              </a>) : (<p className='mt-2 text-darkHover text-sm font-IBM_Plex_Sans dark:text-lightHover'>
+                {t('in_progress')}
+              </p>)
+                
+              }
             </div>
           </div>
         ))}

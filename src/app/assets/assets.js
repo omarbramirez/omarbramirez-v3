@@ -143,29 +143,6 @@ export const workData = [
 
 
 
-// export const workData = [
-//     {
-//         title: 'Frontend project',
-//         description: 'Web Design',
-//         bgImage: '/work-1.png',
-//     },
-//     {
-//         title: 'Geo based app',
-//         description: 'Mobile App',
-//         bgImage: '/work-2.png',
-//     },
-//     {
-//         title: 'Photography site',
-//         description: 'Web Design',
-//         bgImage: '/work-3.png',
-//     },
-//     {
-//         title: 'UI/UX designing',
-//         description: 'UI/UX Design',
-//         bgImage: '/work-4.png',
-//     },
-// ]
-
 export const serviceData = [
   { icon: assets.web_icon, iconDark: assets.web_icon_dark, titleKey: "web.title", descriptionKey: "web.description", link: '' },
   { icon: assets.mobile_icon, iconDark: assets.mobile_icon_dark, titleKey: "mobile.title", descriptionKey: "mobile.description", link: '' },
@@ -175,10 +152,11 @@ export const serviceData = [
 
 
 export const infoList = [
-  { icon: assets.code_icon, iconDark: assets.code_icon_dark, titleKey: "languages.title", descriptionKey: "languages.desc" },
-  { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, titleKey: "education.title", descriptionKey: "education.desc" },
-  { icon: assets.project_icon, iconDark: assets.project_icon_dark, titleKey: "projects.title", descriptionKey: "projects.desc" }
+  { icon: assets.code_icon, iconDark: assets.code_icon_dark, titleKey: "languages.title", listKey: "languages.list" },
+  { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, titleKey: "education.title", listKey: "education.list" },
+  { icon: assets.project_icon, iconDark: assets.project_icon_dark, titleKey: "projects.title", listKey: "projects.list" }
 ];
+
 
 export const toolsData = [
   { icon: assets.vscode, name: "VS Code" },
