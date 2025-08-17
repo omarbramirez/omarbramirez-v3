@@ -107,7 +107,7 @@
             "name": "Full Name",
             "email": "Email",
             "message": "Write your message here",
-            "submit": "Send Message",
+            "submit": "Send",
             "msgOnSuccess": "Sent successfully",
             "msgOnError": "Something went wrong, please try again later."
         }
