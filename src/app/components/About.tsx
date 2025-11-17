@@ -10,40 +10,27 @@ const About: React.FC<SectionProps> = ({ isDarkMode }) => {
   const t = useTranslations('About')
   
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
       id='aboutMe' className='w-full px-[12%] py-10 scroll-mt-20'>
       <motion.h4
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
         className='text-center mb-2 text-lg font-EB_Garamond'>{t('title')}</motion.h4>
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
         className='text-center text-5xl font-EB_Garamond'>{t('subtitle')}</motion.h2>
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
         className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
           className='flex-1'>
           <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-IBM_Plex_Sans'>
             {t('description')}
           </p>
-
           <motion.ul
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
             className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto'>
             
             
@@ -68,14 +55,8 @@ const About: React.FC<SectionProps> = ({ isDarkMode }) => {
 ))}        
           </motion.ul>
           <motion.h4
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.3, duration: 0.5 }}
             className='my-6 text-gray-700 font-EB_Garamond dark:text-white text-center'>{t('technologies')}</motion.h4>
           <motion.ul
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5, delay: 0.6 }}
             className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 max-w-3xl mx-auto"
           >
             {toolsData.map(({ icon, name }, index) => (
