@@ -86,7 +86,7 @@
         "description": "Plataforma cultural de fomento a la lectura, con integración multimedia y métricas de participación."
       },
       "ecommerce": {
-        "title": "E-commerce interactivo",
+        "title": "E-commerce interactivo (En Desarrollo)",
         "description": "Tienda en línea de productos personalizables con renders 3D en tiempo real, opciones seguras de pago y seguimiento de pedidos."
       },
       "diccionario": {
@@ -94,7 +94,7 @@
         "description": "Aplicación web de consulta rápida de términos, con búsqueda instantánea, historial de consultas y sincronización entre dispositivos."
       },
       "personal": {
-        "title": "Sistema de validación Three.js",
+        "title": "Sistema de validación Three.js (En Desarrollo)",
         "description": "Módulo experimental para explorar diferentes técnicas de renderizado en Three.js, incluyendo funciones, composiciones, materiales y comportamientos visuales en diversas configuraciones 3D."
       }
     }
