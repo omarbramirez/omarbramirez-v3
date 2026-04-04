@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import { assets, infoList, toolsData } from '@/src/app/assets/assets'
 import Image from 'next/image'
-import { SectionProps,AboutMeListProps } from "../../types/forms";
+import { SectionProps } from "../../types/forms";
 import { motion } from 'motion/react'
 
 

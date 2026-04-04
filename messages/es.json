@@ -1,118 +1,118 @@
 {
-    "Navbar": {
-        "home": "Inicio",
-        "aboutMe": "Sobre mí",
-        "services": "Servicios",
-        "work": "Mi trabajo",
-        "contact": "Contáctame"
+  "Navbar": {
+    "home": "Inicio",
+    "aboutMe": "Sobre mí",
+    "services": "Servicios",
+    "work": "Mi trabajo",
+    "contact": "Contáctame"
+  },
+  "Header": {
+    "greeting": "¡Hola, soy Omar!",
+    "punchline": "Full-stack por vocación\nChilango por elección.",
+    "resume": "Desarrollador integral con 4 años de experiencia internacional.\nEspecialista en JavaScript, Node.js y React.\nComprometido con transformar tus ideas en soluciones digitales escalables y de alto impacto.",
+    "contact": "Contáctame",
+    "my_resume": "Mi currículum",
+    "cv": "/cv-esp.pdf"
+  },
+  "About": {
+    "title": "Introducción",
+    "subtitle": "Sobre mí",
+    "description": "Como desarrollador integral, he colaborado con instituciones prestigiosas como la Academia Ecuatoriana de la Lengua y la Feria Internacional del Libro de Quito, así como con profesionales de diversos sectores comerciales. Mi experiencia en MERN y Next.js me permite ofrecer soluciones tecnológicas innovadoras que impulsan el éxito de tus proyectos.",
+    "languages": {
+      "title": "Lenguajes y Frameworks",
+      "list": [
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "React Native",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Node.js",
+        "Express"
+      ]
     },
-    "Header": {
-        "greeting": "¡Hola, soy Omar!",
-        "punchline": "Full-stack por vocación\nChilango por elección.",
-        "resume": "Desarrollador integral con 4 años de experiencia internacional.\nEspecialista en JavaScript, Node.js y React.\nComprometido con transformar tus ideas en soluciones digitales escalables y de alto impacto.",
-        "contact": "Contáctame",
-        "my_resume": "Mi currículum",
-        "cv": "/cv-esp.pdf"
+    "education": {
+      "title": "Educación",
+      "list": [
+        "AWS Certified Cloud Practitioner (Cursando actualmente)",
+        "Node.js, Express, MongoDB & More: The Complete Bootcamp (2022)",
+        "Licenciatura en Lingüística (2019)"
+      ]
     },
-    "About": {
-        "title": "Introducción",
-        "subtitle": "Sobre mí",
-        "description": "Como desarrollador integral, he colaborado con instituciones prestigiosas como la Academia Ecuatoriana de la Lengua y la Feria Internacional del Libro de Quito, así como con profesionales de diversos sectores comerciales. Mi experiencia en MERN y Next.js me permite ofrecer soluciones tecnológicas innovadoras que impulsan el éxito de tus proyectos.",
-        "languages": {
-            "title": "Lenguajes y Frameworks",
-            "list": [
-                "HTML5",
-                "CSS3",
-                "Sass",
-                "JavaScript (ES6+)",
-                "TypeScript",
-                "React.js",
-                "Next.js",
-                "React Native",
-                "Tailwind CSS",
-                "Bootstrap",
-                "Node.js",
-                "Express"
-            ]
-        },
-        "education": {
-            "title": "Educación",
-            "list": [
-                "AWS Certified Cloud Practitioner (Cursando actualmente)",
-                "Node.js, Express, MongoDB & More: The Complete Bootcamp (2022)",
-                "Licenciatura en Lingüística (2019)"
-            ]
-        },
-        "projects": {
-            "title": "Proyectos",
-            "list": [
-                "Más de 10 proyectos entregados con soluciones diversas: e-commerce, sistemas de reservas y agenda, aplicaciones móviles, sitios institucionales y plataformas web personalizadas."
-            ]
-        },
-        "technologies": "Tecnologías"
+    "projects": {
+      "title": "Proyectos",
+      "list": [
+        "Más de 10 proyectos entregados con soluciones diversas: e-commerce, sistemas de reservas y agenda, aplicaciones móviles, sitios institucionales y plataformas web personalizadas."
+      ]
     },
-    "Services": {
-        "title": "¿Qué ofrezco?",
-        "subtitle": "Mis servicios",
-        "description": "Conmigo, tendrás la certeza de recibir soluciones tecnológicas de vanguardia adaptadas a tus necesidades. Mis clientes valoran mi enfoque integral, que combina diseños de interfaces modernos y centrados en el usuario, aplicaciones web y móviles fluidas, integraciones ágiles con servicios externos y automatizaciones que optimizan procesos.",
-        "web": {
-            "title": "Desarrollo Web",
-            "description": "Creación de sitios y aplicaciones web dinámicas con tecnologías modernas (React, Next.js, Node.js, MongoDB), optimizadas para rendimiento, escalabilidad y SEO."
-        },
-        "mobile": {
-            "title": "Aplicaciones Móviles",
-            "description": "Desarrollo de apps móviles híbridas con React Native, sincronizadas con bases de datos y adaptadas desde versiones web para ofrecer experiencias consistentes en Android e iOS."
-        },
-        "automation": {
-            "title": "Integraciones y Automatización",
-            "description": "Implementación de APIs, pasarelas de pago (Stripe, PayPal, Mercado Pago), webhooks y automatización de procesos con notificaciones en tiempo real y gestión optimizada de datos."
-        },
-        "uiux": {
-            "title": "Diseño UI/UX",
-            "description": "Diseño de interfaces modernas, intuitivas y centradas en el usuario, con identidad visual coherente y experiencias de navegación fluidas en web y móvil."
-        },
-        "read_more": "Leer más"
+    "technologies": "Tecnologías"
+  },
+  "Services": {
+    "title": "¿Qué ofrezco?",
+    "subtitle": "Mis servicios",
+    "description": "Conmigo, tendrás la certeza de recibir soluciones tecnológicas de vanguardia adaptadas a tus necesidades. Mis clientes valoran mi enfoque integral, que combina diseños de interfaces modernos y centrados en el usuario, aplicaciones web y móviles fluidas, integraciones ágiles con servicios externos y automatizaciones que optimizan procesos.",
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Creación de sitios y aplicaciones web dinámicas con tecnologías modernas (React, Next.js, Node.js, MongoDB), optimizadas para rendimiento, escalabilidad y SEO."
     },
-    "Work": {
-        "title": "Mi portafolio",
-        "subtitle": "Mis últimos proyectos",
-        "description": "¡Explora mi portafolio! Descubre una selección de proyectos que demuestran mi capacidad para transformar ideas en soluciones digitales efectivas, desde plataformas e-commerce que impulsan ventas hasta sistemas de gestión que optimizan procesos, todos creados con un enfoque integral y tecnologías modernas.",
-        "show_more": "Mostrar más",
-        "show_project": "Ver proyecto",
-        "in_progress": "En progreso",
-        "projects": {
-            "blog": {
-                "title": "Blog educativo",
-                "description": "Plataforma cultural de fomento a la lectura, con integración multimedia y métricas de participación."
-            },
-            "agenda": {
-                "title": "Sistema de citas online",
-                "description": "Módulo de gestión con pagos en línea, administración de horarios, confirmaciones automáticas y gestión de clientes."
-            },
-            "ecommerce": {
-                "title": "E-commerce interactivo",
-                "description": "Tienda en línea de productos personalizables con renders 3D en tiempo real, opciones seguras de pago y seguimiento de pedidos."
-            },
-            "diccionario": {
-                "title": "Diccionario web",
-                "description": "Aplicación web de consulta rápida de términos, con búsqueda instantánea, historial de consultas y sincronización entre dispositivos."
-            }
-        }
+    "mobile": {
+      "title": "Aplicaciones Móviles",
+      "description": "Desarrollo de apps móviles híbridas con React Native, sincronizadas con bases de datos y adaptadas desde versiones web para ofrecer experiencias consistentes en Android e iOS."
     },
-    "Contact": {
-        "title": "Contáctame",
-        "subtitle": "Contáctame con confianza",
-        "description": "¿Tienes dudas o comentarios? ¡Me encantaría saber de ti! Usa el formulario a continuación.",
-        "form": {
-            "name": "Nombre completo",
-            "email": "Correo electrónico",
-            "message": "Escribe tu mensaje aquí",
-            "submit": "Enviar",
-            "msgOnSuccess": "Enviado con éxito",
-            "msgOnError": "Algo salió mal, por favor inténtalo de nuevo más tarde."
-        }
+    "automation": {
+      "title": "Integraciones y Automatización",
+      "description": "Implementación de APIs, pasarelas de pago (Stripe, PayPal, Mercado Pago), webhooks y automatización de procesos con notificaciones en tiempo real y gestión optimizada de datos."
     },
-    "Footer": {
-        "copyright": "Todos los derechos reservados."
+    "uiux": {
+      "title": "Diseño UI/UX",
+      "description": "Diseño de interfaces modernas, intuitivas y centradas en el usuario, con identidad visual coherente y experiencias de navegación fluidas en web y móvil."
+    },
+    "read_more": "Leer más"
+  },
+  "Work": {
+    "title": "Mi portafolio",
+    "subtitle": "Mis últimos proyectos",
+    "description": "¡Explora mi portafolio! Descubre una selección de proyectos que demuestran mi capacidad para transformar ideas en soluciones digitales efectivas, desde plataformas e-commerce que impulsan ventas hasta sistemas de gestión que optimizan procesos, todos creados con un enfoque integral y tecnologías modernas.",
+    "show_more": "Mostrar más",
+    "show_project": "Ver proyecto",
+    "in_progress": "En progreso",
+    "projects": {
+      "blog": {
+        "title": "Blog educativo",
+        "description": "Plataforma cultural de fomento a la lectura, con integración multimedia y métricas de participación."
+      },
+      "ecommerce": {
+        "title": "E-commerce interactivo",
+        "description": "Tienda en línea de productos personalizables con renders 3D en tiempo real, opciones seguras de pago y seguimiento de pedidos."
+      },
+      "diccionario": {
+        "title": "Diccionario web",
+        "description": "Aplicación web de consulta rápida de términos, con búsqueda instantánea, historial de consultas y sincronización entre dispositivos."
+      },
+      "personal": {
+        "title": "Sistema de validación Three.js",
+        "description": "Módulo experimental para explorar diferentes técnicas de renderizado en Three.js, incluyendo funciones, composiciones, materiales y comportamientos visuales en diversas configuraciones 3D."
+      }
     }
+  },
+  "Contact": {
+    "title": "Contáctame",
+    "subtitle": "Contáctame con confianza",
+    "description": "¿Tienes dudas o comentarios? ¡Me encantaría saber de ti! Usa el formulario a continuación.",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "message": "Escribe tu mensaje aquí",
+      "submit": "Enviar",
+      "msgOnSuccess": "Enviado con éxito",
+      "msgOnError": "Algo salió mal, por favor inténtalo de nuevo más tarde."
+    }
+  },
+  "Footer": {
+    "copyright": "Todos los derechos reservados."
+  }
 }

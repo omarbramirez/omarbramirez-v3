@@ -15,7 +15,7 @@ import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.jpg';
+import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -51,57 +51,57 @@ import android_studio from './android_studio.png';
 import paypal from './paypal.png';
 
 export const assets = {
-    user_image,
-    code_icon,
-    code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
-    vscode,
-    firebase,
-    figma,
-    git,
-    mongodb,
-    right_arrow_white,
-    logo,
-    logo_dark,
-    mail_icon,
-    mail_icon_dark,
-    profile_img,
-    download_icon,
-    hand_icon,
-    header_bg_color,
-    moon_icon,
-    sun_icon,
-    arrow_icon,
-    arrow_icon_dark,
-    menu_black,
-    menu_white,
-    close_black,
-    close_white,
-    web_icon,
-    mobile_icon,
-    ui_icon,
-    backend_icon,
-    web_icon_dark,
-    mobile_icon_dark,
-    ui_icon_dark,
-    backend_icon_dark,
-    right_arrow,
-    send_icon,
-    right_arrow_bold,
-    right_arrow_bold_dark,
-    chatgpt,
-    aws,
-    netlify,
-    postman,
-    photoshop,
-    illustrator,
-    mysql,
-    stripe,
-    android_studio,
-    paypal
+  user_image,
+  code_icon,
+  code_icon_dark,
+  edu_icon,
+  edu_icon_dark,
+  project_icon,
+  project_icon_dark,
+  vscode,
+  firebase,
+  figma,
+  git,
+  mongodb,
+  right_arrow_white,
+  logo,
+  logo_dark,
+  mail_icon,
+  mail_icon_dark,
+  profile_img,
+  download_icon,
+  hand_icon,
+  header_bg_color,
+  moon_icon,
+  sun_icon,
+  arrow_icon,
+  arrow_icon_dark,
+  menu_black,
+  menu_white,
+  close_black,
+  close_white,
+  web_icon,
+  mobile_icon,
+  ui_icon,
+  backend_icon,
+  web_icon_dark,
+  mobile_icon_dark,
+  ui_icon_dark,
+  backend_icon_dark,
+  right_arrow,
+  send_icon,
+  right_arrow_bold,
+  right_arrow_bold_dark,
+  chatgpt,
+  aws,
+  netlify,
+  postman,
+  photoshop,
+  illustrator,
+  mysql,
+  stripe,
+  android_studio,
+  paypal
 };
 
 
@@ -109,33 +109,33 @@ export const workData = [
   {
     key: 'blog',
     bgImage: '/work-educativa-web.jpg',
-    link: 'https://cuentame-un-poquito.com/'
-  },
-  {
-    key: 'agenda',
-    bgImage: '/work-agenda-nutriologia.jpg',
-    link: 'https://nutriologadalid.com/'
+    link: 'https://cuentameunpoquito.netlify.app/'
   },
   {
     key: 'ecommerce',
     bgImage: '/work-tienda-3d.jpg',
-    link: '#'
+    link: 'https://muebleria-mvp.vercel.app/es/creation/area'
   },
   {
     key: 'diccionario',
     bgImage: '/work-diccionario-app.jpg',
-    link: 'https://gentilicios.netlify.app/'
+    link: 'https://diccionario-academico-de-ecuatorianismos.vercel.app/'
+  },
+  {
+    key: 'personal',
+    bgImage: '/work-personal-3d.jpg',
+    link: 'https://testing-3d-design.vercel.app/'
   }
 
 
 
 
-//   {
-//     title: 'Portal de registro',
-//     description: 'Sistema para registrar y gestionar participantes en eventos. Incluye inscripción en línea, gestión de asistentes, recordatorios automáticos y reportes de asistencia.',
-//     bgImage: '/work-eventos.png',
-//     link: '#'
-//   },
+  //   {
+  //     title: 'Portal de registro',
+  //     description: 'Sistema para registrar y gestionar participantes en eventos. Incluye inscripción en línea, gestión de asistentes, recordatorios automáticos y reportes de asistencia.',
+  //     bgImage: '/work-eventos.png',
+  //     link: '#'
+  //   },
 ];
 
 
@@ -145,7 +145,7 @@ export const workData = [
 
 export const serviceData = [
   { icon: assets.web_icon, iconDark: assets.web_icon_dark, titleKey: "web.title", descriptionKey: "web.description", link: '' },
-  { icon: assets.mobile_icon, iconDark: assets.mobile_icon_dark, titleKey: "mobile.title", descriptionKey: "mobile.description", link: '' },
+  // { icon: assets.mobile_icon, iconDark: assets.mobile_icon_dark, titleKey: "mobile.title", descriptionKey: "mobile.description", link: '' },
   { icon: assets.backend_icon, iconDark: assets.backend_icon_dark, titleKey: "automation.title", descriptionKey: "automation.description", link: '' },
   { icon: assets.ui_icon, iconDark: assets.ui_icon_dark, titleKey: "uiux.title", descriptionKey: "uiux.description", link: '' }
 ];
