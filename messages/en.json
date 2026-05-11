@@ -9,7 +9,7 @@
   "Header": {
     "greeting": "Hi, I'm Omar!",
     "punchline": "JavaScript by vocation\nInspired in Mexico City.",
-    "resume": "Full-stack developer with 4 years of international experience.\nSpecialist in JavaScript, Node.js and React.\nCommitted to transforming your ideas into scalable, high-impact digital solutions.",
+    "resume": "Solutions Architect & Full-stack Developer specialized in designing complex systems and scalable architectures (AI-Augmented Software Engineering).\nMy approach combines deep analytical rigor with the implementation of high-performance interactive 3D interfaces (Three.js/WebGL).\nI transform business requirements into premium technical solutions with a non-negotiable focus on security and efficiency.",
     "contact": "Contact Me",
     "my_resume": "My Resume",
     "cv": "/cv-en.pdf"
@@ -17,36 +17,35 @@
   "About": {
     "title": "Introduction",
     "subtitle": "About Me",
-    "description": "As a full-stack developer, I have collaborated with prestigious institutions such as the Ecuadorian Academy of Language and the Quito International Book Fair, as well as professionals from various commercial sectors. My experience in MERN and Next.js allows me to offer innovative technological solutions that drive the success of your projects.",
+    "description": "I have a proven track record in optimizing critical infrastructure, stabilizing high-concurrency systems, and raising performance standards. Expert in orchestrating robust validation flows and atomic data modeling, I specialize in taking projects from conception to optimal deployment using cutting-edge technologies.",
     "languages": {
-      "title": "Languages and Frameworks",
+      "title": "Frontend & 3D Engineering",
       "list": [
-        "HTML5",
-        "CSS3",
-        "Sass",
-        "JavaScript (ES6+)",
-        "TypeScript",
-        "React.js",
-        "Next.js",
-        "React Native",
-        "Tailwind CSS",
-        "Bootstrap",
-        "Node.js",
-        "Express"
+        "TypeScript (Strict Typing)",
+        "React 19 & Next.js 16",
+        "Three.js & React Three Fiber",
+        "AABB Collision Engines",
+        "Zustand & Tailwind CSS",
+        "Web Core Vitals Optimization"
       ]
     },
     "education": {
-      "title": "Education",
+      "title": "Backend & Infrastructure",
       "list": [
-        "AWS Certified Cloud Practitioner (Currently studying)",
-        "Node.js, Express, MongoDB & More: The Complete Bootcamp (2022)",
-        "Bachelor's Degree in Linguistics (2019)"
+        "Node.js & Hexagonal Architecture",
+        "PostgreSQL & MongoDB",
+        "Prisma (Atomic Ledgers)",
+        "AWS Certified Cloud Practitioner",
+        "Docker & GitHub Actions",
+        "Security & Malware Mitigation"
       ]
     },
     "projects": {
-      "title": "Projects",
+      "title": "Highlighted Experience",
       "list": [
-        "More than 10 delivered projects with diverse solutions: e-commerce, booking and scheduling systems, mobile applications, institutional websites, and customized web platforms."
+        "Univ. Anáhuac: 3D Solutions Architect, Next.js, Prisma & AABB collisions.",
+        "Design Startup (CDMX): Interactive 3D configurators with Three.js.",
+        "Ecuadorian Academy of Language: Full-stack Consultant, performance and security optimization."
       ]
     },
     "technologies": "Technologies"
@@ -86,16 +85,16 @@
         "description": "Cultural platform to promote reading, with multimedia integration and participation metrics."
       },
       "ecommerce": {
-        "title": "Interactive E-commerce (Under Development)",
+        "title": "Interactive E-commerce",
         "description": "Online store for customizable products with real-time 3D renders, secure payment options, and order tracking."
       },
       "diccionario": {
         "title": "Web Dictionary",
         "description": "Web application for quick term lookup, with instant search, query history, and device synchronization."
       },
-      "personal": {
-        "title": "Three.js Validation System (Under Development)",
-        "description": "Experimental module for exploring different rendering techniques in Three.js, including functions, compositions, materials, and visual behaviors across various 3D configurations."
+      "habitat": {
+        "title": "Sustainable Habitat",
+        "description": "Interactive web platform for urban gamification and social responsibility. Features citizen mapping mechanics, an isometric 3D building engine, and a robust transactional system."
       }
     }
   },

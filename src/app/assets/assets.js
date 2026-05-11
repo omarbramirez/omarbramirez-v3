@@ -122,9 +122,9 @@ export const workData = [
     link: 'https://diccionario-academico-de-ecuatorianismos.vercel.app/'
   },
   {
-    key: 'personal',
+    key: 'habitat',
     bgImage: '/work-personal-3d.jpg',
-    link: 'https://testing-3d-design.vercel.app/'
+    link: 'https://www.habitatsostenible.online'
   }
 
 

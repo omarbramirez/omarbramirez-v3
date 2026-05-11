@@ -9,7 +9,7 @@
   "Header": {
     "greeting": "¡Hola, soy Omar!",
     "punchline": "Full-stack por vocación\nChilango por elección.",
-    "resume": "Desarrollador integral con 4 años de experiencia internacional.\nEspecialista en JavaScript, Node.js y React.\nComprometido con transformar tus ideas en soluciones digitales escalables y de alto impacto.",
+    "resume": "Solutions Architect & Full-stack Developer especializado en el diseño de sistemas complejos y arquitecturas escalables (AI-Augmented Software Engineering).\nMi enfoque combina un rigor analítico profundo con la implementación de interfaces interactivas de alto rendimiento en 3D (Three.js/WebGL).\nTransformo requisitos de negocio en soluciones técnicas de nivel premium con un enfoque innegociable en la seguridad y la eficiencia.",
     "contact": "Contáctame",
     "my_resume": "Mi currículum",
     "cv": "/cv-esp.pdf"
@@ -17,36 +17,35 @@
   "About": {
     "title": "Introducción",
     "subtitle": "Sobre mí",
-    "description": "Como desarrollador integral, he colaborado con instituciones prestigiosas como la Academia Ecuatoriana de la Lengua y la Feria Internacional del Libro de Quito, así como con profesionales de diversos sectores comerciales. Mi experiencia en MERN y Next.js me permite ofrecer soluciones tecnológicas innovadoras que impulsan el éxito de tus proyectos.",
+    "description": "Poseo una trayectoria probada en la optimización de infraestructura crítica, logrando estabilizar sistemas bajo alta concurrencia y elevar estándares de rendimiento. Experto en la orquestación de flujos de validación robustos y el modelado de datos atómicos, me especializo en llevar proyectos desde su concepción hasta su despliegue óptimo usando tecnologías de vanguardia.",
     "languages": {
-      "title": "Lenguajes y Frameworks",
+      "title": "Frontend & 3D Engineering",
       "list": [
-        "HTML5",
-        "CSS3",
-        "Sass",
-        "JavaScript (ES6+)",
-        "TypeScript",
-        "React.js",
-        "Next.js",
-        "React Native",
-        "Tailwind CSS",
-        "Bootstrap",
-        "Node.js",
-        "Express"
+        "TypeScript (Strict Typing)",
+        "React 19 & Next.js 16",
+        "Three.js & React Three Fiber",
+        "Motores de Colisiones AABB",
+        "Zustand & Tailwind CSS",
+        "Optimización de Web Core Vitals"
       ]
     },
     "education": {
-      "title": "Educación",
+      "title": "Backend & Infrastructure",
       "list": [
-        "AWS Certified Cloud Practitioner (Cursando actualmente)",
-        "Node.js, Express, MongoDB & More: The Complete Bootcamp (2022)",
-        "Licenciatura en Lingüística (2019)"
+        "Node.js & Arquitectura Hexagonal",
+        "PostgreSQL & MongoDB",
+        "Prisma (Ledgers Atómicos)",
+        "AWS Certified Cloud Practitioner",
+        "Docker & GitHub Actions",
+        "Seguridad & Mitigación de Malware"
       ]
     },
     "projects": {
-      "title": "Proyectos",
+      "title": "Experiencia Destacada",
       "list": [
-        "Más de 10 proyectos entregados con soluciones diversas: e-commerce, sistemas de reservas y agenda, aplicaciones móviles, sitios institucionales y plataformas web personalizadas."
+        "Univ. Anáhuac: Arquitecto 3D, Next.js, Prisma y motor de colisiones AABB.",
+        "Startup de Diseño (CDMX): Configuradores 3D interactivos con Three.js.",
+        "Academia Ecuatoriana de la Lengua: Consultor Full-stack, optimización de rendimiento y seguridad perimetral."
       ]
     },
     "technologies": "Tecnologías"
@@ -86,16 +85,16 @@
         "description": "Plataforma cultural de fomento a la lectura, con integración multimedia y métricas de participación."
       },
       "ecommerce": {
-        "title": "E-commerce interactivo (En Desarrollo)",
+        "title": "E-commerce interactivo",
         "description": "Tienda en línea de productos personalizables con renders 3D en tiempo real, opciones seguras de pago y seguimiento de pedidos."
       },
       "diccionario": {
         "title": "Diccionario web",
         "description": "Aplicación web de consulta rápida de términos, con búsqueda instantánea, historial de consultas y sincronización entre dispositivos."
       },
-      "personal": {
-        "title": "Sistema de validación Three.js (En Desarrollo)",
-        "description": "Módulo experimental para explorar diferentes técnicas de renderizado en Three.js, incluyendo funciones, composiciones, materiales y comportamientos visuales en diversas configuraciones 3D."
+      "habitat": {
+        "title": "Hábitat Sostenible",
+        "description": "Plataforma web interactiva de gamificación urbana y responsabilidad social. Integra mecánicas de mapeo ciudadano, un motor de construcción 3D isométrico y un sistema transaccional robusto."
       }
     }
   },
