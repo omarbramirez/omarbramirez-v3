@@ -32,7 +32,7 @@ const Work: React.FC<SectionProps> = ({ isDarkMode }) => {
             className='grid grid-cols-(--grid-cols-auto) gap-6 my-10'>
         {workData.map((work) => (
           <div key={work.key} className="border border-gray-400 rounded-lg overflow-hidden shadow dark:hover:bg-darkHover dark:hover:shadow-whiteborder border-gray-400 rounded-lg hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
-            <img src={work.bgImage} alt={t(`projects.${work.key}.title`)} />
+            <Image src={work.bgImage} width={800} height={400} alt={`Previsualización del proyecto ${t(`projects.${work.key}.title`)}`} />
             <div className="p-4">
               <h3 className='my-4 font-semibold text-gray-700 font-EB_Garamond dark:text-white'>{t(`projects.${work.key}.title`)}</h3>
               <p className='text-gray-600 text-sm font-IBM_Plex_Sans dark:text-white'>{t(`projects.${work.key}.description`)}</p>
@@ -54,7 +54,7 @@ const Work: React.FC<SectionProps> = ({ isDarkMode }) => {
                 transition={{ delay: 1.1, duration: 0.5 }}
                 viewport={{ once: true }}
             href="https://github.com/omarbramirez?tab=repositories" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
-                {t('show_more')} <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='Right arrow' />
+                {t('show_more')} <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='Flecha derecha' />
             </motion.a>
         </motion.div>
     )

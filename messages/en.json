@@ -113,5 +113,9 @@
   },
   "Footer": {
     "copyright": "All rights reserved."
+  },
+  "Metadata": {
+    "title": "Omar B. Ramirez | Software Engineer & Architect",
+    "description": "Solutions Architect & Full-stack Developer specialized in designing complex systems, scalable architectures, and interactive 3D interfaces."
   }
 }

@@ -32,7 +32,7 @@ const Services: React.FC<SectionProps> = ({isDarkMode}) => {
                     
                         key={index}
                         className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
-                        <Image src={isDarkMode ? iconDark : icon} alt='' className='w-40 mx-auto' />
+                        <Image src={isDarkMode ? iconDark : icon} alt={`Icono representativo de ${t(titleKey)}`} className='w-40 mx-auto' />
                         <h3 className='my-4 font-semibold text-gray-700 font-EB_Garamond dark:text-white'>
                             {t(titleKey)}
                         </h3>

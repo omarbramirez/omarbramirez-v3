@@ -113,5 +113,9 @@
   },
   "Footer": {
     "copyright": "Todos los derechos reservados."
+  },
+  "Metadata": {
+    "title": "Omar B. Ramirez | Arquitecto de Software y Full-Stack",
+    "description": "Arquitecto de Soluciones & Desarrollador Full-stack especializado en el diseño de sistemas complejos, arquitecturas escalables e interfaces 3D interactivas."
   }
 }

@@ -38,7 +38,7 @@ const t = useTranslations("Contact");
     <motion.button 
 
     type="submit" className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover my-10">
-      {t('form.submit')} <Image src={assets.right_arrow_white} alt="" />
+      {t('form.submit')} <Image src={assets.right_arrow_white} alt="Icono de enviar formulario" />
     </motion.button>
     <p
       className={`mt-4 px-4 py-2 rounded-md text-center transition-opacity duration-500

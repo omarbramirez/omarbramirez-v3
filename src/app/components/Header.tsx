@@ -38,7 +38,7 @@ const Header = () => {
                 >
                     <Image
                         src={assets.profile_img}
-                        alt="profile_img"
+                        alt="Foto de perfil de Omar B Ramirez"
                         className="rounded-full w-32"
                     />
                 </motion.div>
@@ -81,7 +81,7 @@ const Header = () => {
                         className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent hover:bg-gray-800 transition-colors"
                     >
                         {t('contact')}
-                        <Image src={assets.right_arrow_white} alt="right_arrow_white" className="w-4" />
+                        <Image src={assets.right_arrow_white} alt="Icono de flecha derecha" className="w-4" />
                     </motion.a>
 
                     <motion.a
@@ -93,7 +93,7 @@ const Header = () => {
                         className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black hover:bg-gray-100 transition-colors"
                     >
                         {t('my_resume')}
-                        <Image src={assets.download_icon} alt="download_icon" className="w-4" />
+                        <Image src={assets.download_icon} alt="Icono de descarga de CV" className="w-4" />
                     </motion.a>
                 </div>
             </div>

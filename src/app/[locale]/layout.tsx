@@ -2,9 +2,21 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans, EB_Garamond } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import {routing} from '../../i18n/routing';
 import { ibm, garamond } from "../../fonts/index";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale === "es" ? "es" : "en";
+  const t = await getTranslations({ locale: currentLocale, namespace: 'Metadata' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export default async function LocaleLayout({
   children,
